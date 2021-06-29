@@ -19,7 +19,6 @@ const userCtrl = {
         }catch(err){
             res.status(500).json({msg: err.message})
         }
-        res.json({msg: "Register a user"})
     },
     loginUser: async  (req,res) => {
         try{
@@ -36,7 +35,6 @@ const userCtrl = {
         }catch(err){
             res.status(500).json({msg: err.message})
         }
-        res.json({msg: "Login a user"})
     },
     verifiedToken: async (req,res) => {
         try{
